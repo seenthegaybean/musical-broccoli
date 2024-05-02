@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFF6C1;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    background-color: #F7F7F7; /* lighter color for main content */
+    padding: 20px;
+    margin-top: 60px; /* adjust margin to compensate for sticky header */
+}
+
+footer {
+    background-color: #FFF6C1;
+    padding: 20px;
+    clear: both;
+}
+
+/* make the header sticky */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* add some basic styling for the menu */
+header nav ul li:hover {
+    background-color: #F7F7F7;
+}
+
+header nav a:hover {
+    color: #666;
+}
