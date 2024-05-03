@@ -5,15 +5,12 @@ body {
 }
 
 header {
-    background-color: #FFF6C1;
+    background-color: #f0f0f0;
     padding: 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+    text-align: center;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -21,41 +18,59 @@ header nav ul {
     justify-content: space-between;
 }
 
-header nav ul li {
+nav li {
     margin-right: 20px;
 }
 
-header nav a {
-    color: #333;
+nav a {
+    color: #337ab7;
     text-decoration: none;
 }
 
-main {
-    background-color: #F7F7F7; /* lighter color for main content */
+#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#why-choose-us {
+    background-color: #f7f7f7;
     padding: 20px;
-    margin-top: 60px; /* adjust margin to compensate for sticky header */
 }
 
-footer {
-    background-color: #FFF6C1;
+#why-choose-us ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#why-choose-us li {
+    margin-bottom: 10px;
+}
+
+#reviews {
+    background-color: #fff;
     padding: 20px;
-    clear: both;
 }
 
-/* make the header sticky */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-/* add some basic styling for the menu */
-header nav ul li:hover {
-    background-color: #F7F7F7;
-}
-
-header nav a:hover {
-    color: #666;
-}
+#reviews blockquote {
+    font-size: 18px;
+    margin
