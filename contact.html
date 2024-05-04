@@ -1,5 +1,68 @@
 <!DOCTYPE html>
 <head>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+    }
+
+    .netlify-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .netlify-form-group {
+        margin-bottom: 20px;
+    }
+
+    .netlify-form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .netlify-form-group input[type="text"],
+    .netlify-form-group input[type="email"],
+    .netlify-form-group input[type="date"],
+    .netlify-form-group input[type="time"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .netlify-form-group input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .netlify-btn {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .netlify-btn:hover {
+        background-color: #0056b3;
+    }
+
+    /* Update navigation background color */
+    .netlify-nav {
+        background-color: transparent; /* Change this to the desired background color */
+    }
+</style>
   <meta charset="utf-8"/>
   <title>Sean&#x27;s Babysitting Service</title>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -36,7 +99,7 @@
           </a>
           <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
             <ul role="list" class="nav-menu-two w-list-unstyled">
-              li><a href="index.html" onclick="event.preventDefault(); window.location.href='';" class="nav-link">Home</a></li>
+              <li><a href="index.html" onclick="event.preventDefault(); window.location.href='';" class="nav-link">Home</a></li>
               <li><a href="cal.html" onclick="event.preventDefault(); window.location.href='cal';" class="nav-link">Availability Calendar</a></li>
               <li><a href="price.html" onclick="event.preventDefault(); window.location.href='price';" class="nav-link">Pricing</a></li>
             </ul>
@@ -66,32 +129,31 @@
   </section>
   
   <body>
-    <div class="container">
-        <h2>Netlify Form</h2>
-        <form name="contact" method="POST" data-netlify="true">
-            <div class="form-group">
-                <label for="phone">Phone #:</label>
-                <input type="text" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-            <div class="form-group">
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="time" required>
-            </div>
-            <div class="form-group">
-                <input type="checkbox" id="policy" name="policy" required>
-                <label for="policy">I agree to the policy</label>
-            </div>
-            <button type="submit" class="btn">Submit</button>
-        </form>
-    </div>
+    <div class="netlify-container">
+      <h2>Netlify Form</h2>
+      <form name="contact" method="POST" data-netlify="true">
+          <div class="netlify-form-group">
+              <label for="phone">Phone #:</label>
+              <input type="text" id="phone" name="phone" required>
+          </div>
+          <div class="netlify-form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="netlify-form-group">
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" required>
+          </div>
+          <div class="netlify-form-group">
+              <label for="time">Time:</label>
+              <input type="time" id="time" name="time" required>
+          </div>
+          <div class="netlify-form-group">
+              <input type="checkbox" id="policy" name="policy" required>
+              <label for="policy">I agree to the Babysitting <li><a href="index.html" onclick="event.preventDefault(); window.location.href='policy';" class="nav-link">policy</a></li></label>
+          </div>
+          <button type="submit" class="netlify-btn">Submit</button>
+      </form>
   <section class="footer-light">
     <div class="container-2">
       <div class="footer-wrapper-two">
