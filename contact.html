@@ -132,9 +132,9 @@
   <body>
     <div class="netlify-container">
       <h2>Booking Form</h2>
-      <form name="contact" method="POST" data-netlify="true">
+      <form id="contact-form" name="contact" method="POST" data-netlify="true">
           <div class="netlify-form-group">
-              <label for="phone">Phone Number:</label>
+              <label for="phone">Phone #:</label>
               <input type="text" id="phone" name="phone" required>
           </div>
           <div class="netlify-form-group">
@@ -142,7 +142,7 @@
               <input type="email" id="email" name="email" required>
           </div>
           <div class="netlify-form-group">
-              <label for="date">Date Of Session:</label>
+              <label for="date">Date:</label>
               <input type="date" id="date" name="date" required>
           </div>
           <div class="netlify-form-group">
@@ -151,10 +151,33 @@
           </div>
           <div class="netlify-form-group">
               <input type="checkbox" id="policy" name="policy" required>
-              <label for="policy">I agree to the Babysitting <a href="policy.html" onclick="event.preventDefault(); window.location.href='policy';" class="nav-link">policy</a></label>
+              <label for="policy">I agree to the policy</label>
           </div>
           <button type="submit" class="netlify-btn">Submit</button>
       </form>
+  </div>
+
+  <script>
+      // Wait for the DOM to be loaded
+      document.addEventListener("DOMContentLoaded", function () {
+          // Get the form element
+          const form = document.getElementById("contact-form");
+
+          // Add event listener for form submission
+          form.addEventListener("submit", function (event) {
+              // Prevent default form submission
+              event.preventDefault();
+
+              // Submit the form using JavaScript (you can also use AJAX if needed)
+              form.submit();
+
+              // Redirect to another page after a short delay (you can adjust the delay as needed)
+              setTimeout(function () {
+                  window.location.href = "thanks.html"; // Replace with your desired URL
+              }, 1000); // 1000 milliseconds = 1 second
+          });
+      });
+  </script>
   <section class="footer-light">
     <div class="container-2">
       <div class="footer-wrapper-two">
