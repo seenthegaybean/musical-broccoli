@@ -38,7 +38,7 @@
 
     let countdownInterval = setInterval(() => {
       countdown--;
-      countdownElement.textContent = `Thanks! We will be in contact shortly! Redirecting in {countdown} seconds..`;
+      countdownElement.textContent = `Thanks! We will be in contact shortly! Redirecting in ${countdown} seconds..`;
 
       if (countdown === 0) {
         clearInterval(countdownInterval);
