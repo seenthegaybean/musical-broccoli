@@ -1,5 +1,63 @@
 <!DOCTYPE html>
 <head>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="date"],
+    .form-group input[type="time"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .form-group input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+</style>
   <meta charset="utf-8"/>
   <title>Sean&#x27;s Babysitting Service</title>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -49,7 +107,38 @@
       </div>
     </div>
   </div>
-
+  <div class="menu-button-2 w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div></div><section class="hero-heading-center-2"><div class="container-4">
+    <h1 class="centered-heading-3 margin-bottom-32px">Booking!</h1></div></section>
+    <div>
+      <iframe src="https://calendar.google.com/calendar/embed?src=c_b0f2637e7dd951e98d70cbe5ebfbd10d28c593bdbff093e645d44d8121e2f489%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+  <body>
+    <div class="container">
+        <h2>Netlify Form</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <div class="form-group">
+                <label for="phone">Phone #:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="policy" name="policy" required>
+                <label for="policy">I agree to the policy</label>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
   <section class="footer-light">
     <div class="container-2">
       <div class="footer-wrapper-two">
