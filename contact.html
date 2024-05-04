@@ -133,6 +133,10 @@
     <div class="netlify-container">
       <h2>Booking Form</h2>
       <form id="contact-form" name="contact" method="POST" data-netlify="true">
+        <div class="netlify-form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      </div>
           <div class="netlify-form-group">
               <label for="phone">Phone #:</label>
               <input type="text" id="phone" name="phone" required>
@@ -164,7 +168,7 @@
 
           <div class="netlify-form-group">
               <input type="checkbox" id="policy" name="policy" required>
-              <label for="policy">I agree to the <a href="policy.html">policy</a></label>
+              <label for="policy">I agree to the <a href="policy.html" target="_blank">policy</a></label>
           </div>
           <button type="submit" class="netlify-btn">Submit</button>
       </form>
