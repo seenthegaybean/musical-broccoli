@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Page Not Found</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff3ae; /* Choose your desired background color */
+  }
+  
+  .logo {
+    max-width: 200px; /* Adjust the size of your logo */
+    width: 100%;
+  }
+
+  .countdown {
+    font-size: 24px;
+  }
+</style>
+</head>
+<body>
+  <div class="content">
+    <img src="Babysitter Illustration Pink Logotype.png" alt="Logo" class="logo">
+    <p class="countdown" id="countdown">Redirecting in 5 seconds...</p>
+  </div>
+
+  <script>
+    // Countdown timer
+    let countdown = 5;
+    let countdownElement = document.getElementById('countdown');
+
+    let countdownInterval = setInterval(() => {
+      countdown--;
+      countdownElement.textContent = `Redirecting in ${countdown} seconds...`;
+
+      if (countdown === 0) {
+        clearInterval(countdownInterval);
+        window.location.href = '/'; // Redirect to home page
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
