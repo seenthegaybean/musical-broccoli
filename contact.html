@@ -150,8 +150,21 @@
               <input type="time" id="time" name="time" required>
           </div>
           <div class="netlify-form-group">
+            <input type="checkbox" id="Entertainment" name="Entertainment" required>
+            <label for="Entertainment">I Would like the entertainment package ($8)</label>
+        </div>
+        <div class="netlify-form-group">
+          <input type="checkbox" id="Books" name="Books" required>
+          <label for="Books">I would like you to bring books!</label>
+      </div>
+      <div class="netlify-form-group">
+        <label for="book">If you selected the above checkbox, what books does your child like?</label>
+        <input type="text" id="book" name="book" required>
+    </div>
+
+          <div class="netlify-form-group">
               <input type="checkbox" id="policy" name="policy" required>
-              <label for="policy">I agree to the policy</label>
+              <label for="policy">I agree to the <a href="policy.html"></a></label>
           </div>
           <button type="submit" class="netlify-btn">Submit</button>
       </form>
