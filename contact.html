@@ -1,68 +1,5 @@
 <!DOCTYPE html>
 <head>
-  <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-color: #f4f4f4;
-    }
-
-    .netlify-container {
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .netlify-form-group {
-        margin-bottom: 20px;
-    }
-
-    .netlify-form-group label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-
-    .netlify-form-group input[type="text"],
-    .netlify-form-group input[type="email"],
-    .netlify-form-group input[type="date"],
-    .netlify-form-group input[type="time"] {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    .netlify-form-group input[type="checkbox"] {
-        margin-right: 10px;
-    }
-
-    .netlify-btn {
-        display: inline-block;
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    .netlify-btn:hover {
-        background-color: #0056b3;
-    }
-
-    /* Update navigation background color */
-    .netlify-nav {
-        background-color: transparent; /* Change this to the desired background color */
-    }
-</style>
   <meta charset="utf-8"/>
   <title>Sean&#x27;s Babysitting Service</title>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -99,7 +36,7 @@
           </a>
           <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
             <ul role="list" class="nav-menu-two w-list-unstyled">
-              <li><a href="index.html" onclick="event.preventDefault(); window.location.href='';" class="nav-link">Home</a></li>
+              <li><a href="#" class="nav-link">Home</a></li>
               <li><a href="cal.html" onclick="event.preventDefault(); window.location.href='cal';" class="nav-link">Availability Calendar</a></li>
               <li><a href="price.html" onclick="event.preventDefault(); window.location.href='price';" class="nav-link">Pricing</a></li>
             </ul>
@@ -112,106 +49,51 @@
       </div>
     </div>
   </div>
-  <div class="menu-button-2 w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div></div><section class="hero-heading-center-2"><div class="container-4">
-    <section class="hero-stack">
-      <div class="container-3">
-          <div class="hero-wrapper-two">
-            <h1 class="centered-heading-3 margin-bottom-32px">Booking!</h1></div></section>
-            <br>
-            <br>
-              <h1>Calendar</h1>
-              <h2>Booking Form Below!</h2>
-              <p class="margin-bottom-24px-2">Busy = Babysitting. Please select any non busy slot!</p>
-              <div>
-
-                  <iframe src="https://calendar.google.com/calendar/embed?src=c_b0f2637e7dd951e98d70cbe5ebfbd10d28c593bdbff093e645d44d8121e2f489%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-              </div>
-          </div>
-      </div>
+  <section class="hero-heading-center-2">
+    <div class="container-4">
+      <h1 class="centered-heading-3 margin-bottom-32px">Booking!</h1>
+    </div>
+    <p class="paragraph-7">
+      <a href="http://policy.html" target="_blank">BY BOOKING YOU AGGRE TO THE POLICY FOUND HERE<br/></a>
+    </p>
+    <p class="paragraph-7">
+      <a href="https://book.stripe.com/28o17WaG786V2Dm4gS" target="_blank">
+        Click here If your Session Is over 3 hours and you want the Entertainment Package<br/>
+      </a>
+    </p>
+    <p class="paragraph-7">
+      <a href="https://buy.stripe.com/dR6eYMdSjcnb2DmcNp" target="_blank">
+        Click here If your Session Is over 3 hours<br/>
+      </a>
+    </p>
+    <p class="paragraph-7">
+      <a href="https://buy.stripe.com/8wM8Ao9C372Rguc8xa" target="_blank">
+        Click here If your Session Under 2 Hours and you want the Entertainment Package<br/>
+      </a>
+    </p>
+    <p class="paragraph-7">
+      <a href="https://buy.stripe.com/4gwg2Q29Bfzn1zibJo" target="_blank">
+        Click here If your Session Under 2 hours<br/>
+      </a>
+    </p>
+  </section>
+  <section class="features-metrics">
+    <div class="container-5"></div>
   </section>
   
-  <body>
-    <div class="netlify-container">
-      <h2>Booking Form</h2>
-      <form id="contact-form" name="contact" method="POST" data-netlify="true">
-        <div class="netlify-form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-      </div>
-          <div class="netlify-form-group">
-              <label for="phone">Phone #:</label>
-              <input type="text" id="phone" name="phone" required>
-          </div>
-          <div class="netlify-form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-          </div>
-          <div class="netlify-form-group">
-              <label for="date">Date:</label>
-              <input type="date" id="date" name="date" required>
-          </div>
-          <div class="netlify-form-group">
-              <label for="time">Time:</label>
-              <input type="time" id="time" name="time" required>
-          </div>
-          <div class="netlify-form-group">
-            <input type="checkbox" id="Entertainment" name="Entertainment" >
-            <label for="Entertainment">I Would like the entertainment package ($8)</label>
-        </div>
-        <div class="netlify-form-group">
-          <input type="checkbox" id="Books" name="Books" >
-          <label for="Books">I would like you to bring books! ($FREE)</label>
-      </div>
-      <div class="netlify-form-group">
-        <label for="book">If you selected the above checkbox, what books does your child like?</label>
-        <input type="text" id="book" name="book" >
+<section class="footer-light">
+  <div class="container-2">
+    <div class="footer-wrapper-two">
+      <a href="#" class="footer-brand w-inline-block">
+        <img src="Babysitter Illustration Pink Logotype.png" loading="lazy" width="128" alt=""/>
+      </a>
     </div>
-
-          <div class="netlify-form-group">
-              <input type="checkbox" id="policy" name="policy" required>
-              <label for="policy">I agree to the <a href="policy.html" target="_blank">policy</a></label>
-          </div>
-          <button type="submit" class="netlify-btn">Submit</button>
-          <H3>Pay Your deposit after submission to avoid delays</H3><br>
-            <p><a href="https://buy.stripe.com/9AQ4k87tVaf3em400B" target="_blank">Under 3 Hours Click here</a><br>
-            <a href="https://book.stripe.com/aEU6sgaG7evjguc9B9" target="_blank">Over 3 Hours Click here</a></p>
-      </form>
+    <div class="footer-divider-two"></div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">© 2024 Sean&#x27;s Babysitting. All rights reserved *Awaiting Certifaction</div>
+    </div>
   </div>
-
-  <script>
-      // Wait for the DOM to be loaded
-      document.addEventListener("DOMContentLoaded", function () {
-          // Get the form element
-          const form = document.getElementById("contact-form");
-
-          // Add event listener for form submission
-          form.addEventListener("submit", function (event) {
-              // Prevent default form submission
-              event.preventDefault();
-
-              // Submit the form using JavaScript (you can also use AJAX if needed)
-              form.submit();
-
-              // Redirect to another page after a short delay (you can adjust the delay as needed)
-              setTimeout(function () {
-                  window.location.href = "thanks.html"; // Replace with your desired URL
-              }, 1000); // 1000 milliseconds = 1 second
-          });
-      });
-  </script>
-  <section class="footer-light">
-    <div class="container-2">
-      <div class="footer-wrapper-two">
-        <a href="#" class="footer-brand w-inline-block">
-          <img src="Babysitter Illustration Pink Logotype.png" loading="lazy" width="128" alt=""/>
-        </a>
-      </div>
-      <div class="footer-divider-two"></div>
-      <div class="footer-bottom">
-        <div class="footer-copyright">© 2024 Sean&#x27;s Babysitting. All rights reserved *Awaiting Certifaction</div>
-      </div>
-    </div>
-  </section>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66355b0456f85796ef335bb7" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</section>
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66355b0456f85796ef335bb7" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </body>
 </html>
